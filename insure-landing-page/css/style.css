@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #2d2640;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 4em;
+  position: relative;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin: 0;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.line-top::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 150px;
+}
+
+.line-violet::before {
+  background-color: #2d2640;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.btn-reverse {
+  border-color: #2d2640;
+  color: #2d2640;
+}
+
+.btn-reverse:hover {
+  opacity: 0.8;
+  background-color: #2d2640;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+.navbar li a {
+  color: var(--dark-grayish-violet);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header {
+  background-color: #2d2640;
+  color: #fff;
+  padding: 110px 0;
+  position: relative;
+  margin-bottom: 250px;
+  z-index: 1;
+}
+
+header::after {
+  content: "";
+  background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+}
+
+header::before {
+  content: "";
+  background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+header .banner-image {
+  max-width: 100%;
+  margin-bottom: -250px;
+}
+
+@media (max-width: 768px) {
+  header .banner-image {
+    margin-left: 0;
+  }
+}
+
+.second-section .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .second-section .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .second-section .boxes p {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.second-section .boxes .tile {
+  margin-top: 80px;
+}
+
+.second-section .boxes .tile img {
+  margin-bottom: 20px;
+}
+
+/* Section styling */
+.bg-violet {
+  background-color: #2d2640;
+  background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50% 100%;
+  padding: 70px;
+  margin: 100px auto;
+}
+
+.bg-violet h2 {
+  color: #fff;
+  font-size: 3em;
+  padding: 0;
+  width: 60%;
+}
+
+/* Footer styling */
+footer {
+  background-color: #fafafa;
+  background-image: url("../images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 60px 0 30px;
+}
+
+footer h4 {
+  color: #837d87;
+  text-transform: uppercase;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin: 10px;
+}
+
+footer ul li a {
+  color: #2d2640;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #95a9c6;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  .line-top::before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .bg-violet {
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  }
+  .bg-violet h2 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
